@@ -158,7 +158,7 @@ controller.on('channel_created', co.wrap(function *(bot, res) {
   });
 
   analytics.identify({
-    userId: res.channel.creator
+    userId: res.channel.creator,
     traits: {
       team_id: team[0].id
     }
