@@ -52,7 +52,7 @@ controller.setupWebserver(port, function(err, webserver) {
   controller.createWebhookEndpoints(controller.webserver);
   controller.createOauthEndpoints(controller.webserver, function(err, req, res) {
     if (err) return res.status(500).send('ERROR: ' + err);
-    res.send('Success!');
+    res.send('Success! Please see https://www.github.com/lambtron/slack-channel-fomo-bot for more information.');
   });
 });
 
@@ -166,7 +166,7 @@ controller.on('channel_created', co.wrap(function *(bot, res) {
 
   analytics.track({
     userId: res.channel.creator,
-    event: 'Bot Installed'
+    event: 'Channel Created'
   });
 }));
 
