@@ -40,7 +40,7 @@ var controller = Botkit.slackbot({
 }).configureSlackApp({
   clientId: clientId,
   clientSecret: clientSecret,
-  redirectUri: 'http://localhost:3000/oauth',
+  redirectUri: 'http://slack-channels-fomo-bot.herokuapp.com/oauth',
   scopes: ['bot']
 });
 
