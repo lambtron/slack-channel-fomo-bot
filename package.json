@@ -1,0 +1,27 @@
+{
+  "name": "slack-channel-fomo-bot",
+  "description": "A Slack bot that tells you when a new channel is created.",
+  "version": "0.0.1",
+  "author": "Andy Jiang",
+  "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lambtron/slack-channel-fomo-bot"
+  },
+  "engines": {
+    "node": "^0.12.x",
+    "npm": "^2.1.x"
+  },
+  "private": true,
+  "dependencies": {
+    "analytics-node": "^2.0.1",
+    "botkit": "0.0.4",
+    "co": "^4.6.0",
+    "lodash": "^3.10.1",
+    "mongodb": "^1.4.39",
+    "monk": "^1.0.1",
+    "node-fmt": "^1.0.3",
+    "thunkify-wrap": "^1.0.4",
+    "url-regex": "^3.1.0"
+  }
+}
