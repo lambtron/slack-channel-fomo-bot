@@ -14,7 +14,6 @@
   },
   "private": true,
   "dependencies": {
-    "analytics-node": "^2.0.1",
     "botkit": "0.0.4",
     "co": "^4.6.0",
     "lodash": "^3.10.1",
