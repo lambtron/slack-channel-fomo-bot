@@ -3,7 +3,7 @@
  * Module dependencies.
  */
 
-var thunkify = require('thunkify-wrap');
+var thunkify = require('./lib/util').thunkify;
 var storage = require('./lib/storage');
 var urlRegex = require('url-regex');
 var Botkit = require('botkit');
@@ -30,7 +30,7 @@ if (!clientId || !clientSecret || !port) {
  */
 
 var controller = Botkit.slackbot({
-  storage: thunkatron(storage())
+  storage: thunkify(storage())
 }).configureSlackApp({
   clientId: clientId,
   clientSecret: clientSecret,
